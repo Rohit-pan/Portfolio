@@ -39,18 +39,18 @@ header h1 {
 }
 
 /* About Section */
+.about img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;   /* prevents distortion */
+    border-radius: 50%;
+    border: 4px solid #00dbde;
+}
 .about {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
-.about img {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-}
-
 /* Headings */
 h2 {
     margin-bottom: 10px;
