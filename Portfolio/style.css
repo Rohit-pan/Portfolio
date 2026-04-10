@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+}
+
+/* Card Design */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 25px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.about img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+    color: #ffd369;
+}
+
+/* Text */
+p {
+    line-height: 1.6;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Projects */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box {
+    background: #ffd369;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: #ffb347;
+    transform: scale(1.05);
+}
+.box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: 92%;
+    }
+}
